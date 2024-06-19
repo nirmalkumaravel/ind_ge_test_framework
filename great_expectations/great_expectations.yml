@@ -1,0 +1,13 @@
+datasources:
+  my_datasource:
+    class_name: Datasource
+    execution_engine:
+      class_name: PandasExecutionEngine
+    data_connectors:
+      default_inferred_data_connector_name:
+        class_name: InferredAssetFilesystemDataConnector
+        base_directory: ../data/processed/
+        default_regex:
+          pattern: (.*)\.csv
+          group_names:
+            - data_asset_name
