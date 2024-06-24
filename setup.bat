@@ -1,4 +1,4 @@
 
-source my_great_expectations_project\venv\Scripts\activate
-pip install -r my_great_expectations_project/requirements.txt
+source indigo_test_framework\venv\Scripts\activate
+pip install -r indigo_test_framework/requirements.txt
 great_expectations init
